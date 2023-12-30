@@ -1,10 +1,11 @@
-import "./App.css";
+// components
+import Layouts from "./layouts";
 
 function App() {
   return (
-    <div className="App">
-      <p>PIZZA Menu</p>
-    </div>
+    <>
+      <Layouts />
+    </>
   );
 }
 
