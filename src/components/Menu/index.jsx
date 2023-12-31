@@ -1,9 +1,24 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 // import { PIZZA_DATA } from "../../helper";
+// components
+import Pizza from "./pizza";
+// styles
+import "./style.css";
 
 export const Menu = () => {
-  return <div>Menu Pizza</div>;
+  return (
+    <>
+      <main className="container">
+        <div className="wrapper-title">
+          <h2>Our Menu</h2>
+        </div>
+
+        <Pizza props={"PIZZAAAAA + 44444444"} />
+        <Pizza props={"wwwwwwwwwwww"} />
+      </main>
+    </>
+  );
 
   // return (
   //   <div>

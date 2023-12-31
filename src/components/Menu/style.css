@@ -1,0 +1,25 @@
+main {
+  margin: 50px 0;
+}
+
+.wrapper-title {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 991.98px) {
+    margin-top: 8rem;
+  }
+}
+
+h2 {
+  border-bottom: 2px solid #161a30;
+  border-top: 2px solid #161a30;
+  color: #161a30;
+  /* width: 10vw; */
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -20,14 +22,6 @@ body {
 .container {
   padding: 0 15px;
   max-width: 80rem;
-  margin: 0 auto;
-}
-
-.wrapperFlex {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .title {
@@ -43,7 +37,9 @@ body {
 }
 
 .title h1::before,
-.title h1::after {
+h4::before,
+.title h1::after,
+h4::after {
   position: absolute;
   content: "";
   display: block;
@@ -52,9 +48,11 @@ body {
   background-color: #161a30;
   top: calc(50% - 1px);
 }
-.title h1::before {
+.title h1::before,
+h4::before {
   left: 0;
 }
-.title h1::after {
+.title h1::after,
+h4::after {
   right: 0;
 }
