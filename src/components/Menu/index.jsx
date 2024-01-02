@@ -10,6 +10,9 @@ import "./style.css";
 
 export const Menu = () => {
   const { t } = useTranslation();
+  const pizzas = PIZZA_DATA;
+  // const pizzas = [];
+  const numPizzas = pizzas.length;
   return (
     <>
       <main className="container">
@@ -17,11 +20,15 @@ export const Menu = () => {
           <h2>{t("menuTitle")}</h2>
         </div>
 
-        <div className="wrapper-menu">
-          {PIZZA_DATA.map((item) => {
-            return <Pizza props={item} key={item.id} />;
-          })}
-        </div>
+        {numPizzas > 0 ? (
+          <div className="wrapper-menu">
+            {pizzas.map((item) => (
+              <Pizza pizzaObj={item} key={item.id} />
+            ))}
+          </div>
+        ) : (
+          <p className="no-pizza">{t("noPizza")}🤠</p>
+        )}
       </main>
     </>
   );

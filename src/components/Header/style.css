@@ -1,6 +1,6 @@
 /* HEADER CSS */
 header {
-  position: relative;
+  /* position: relative; */
   background-image: url("../../assets/bg-header/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +22,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .text {
@@ -39,36 +40,41 @@ header {
   text-align: center;
 
   @media (min-width: 992px) {
-    transform: translate(-20px, -90px);
+    transform: translate(-20px, -60px);
   }
 
   @media (max-width: 991.98px) {
     background-color: #161a30;
     padding: 5px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: #f0ece5 3px 3px 6px 0px inset, #161a30 -3px -3px 6px 1px inset;
     border-radius: 2px;
   }
 }
 
 .banner-img {
-  height: 300px;
+  height: 290px;
   border-radius: 2px;
 
   @media (min-width: 992px) {
     position: absolute;
     top: 0;
-    /* left: 0; */
   }
 }
 .img-qrCode {
   height: 150px;
 }
+.work-times-number {
+  z-index: 1;
+  color: #f0ece5;
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  font-family: "Overlock SC", sans-serif;
+  letter-spacing: 1px;
+}
 .wrapper-qrCode {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* flex-direction: column;
-  gap: 10px; */
   align-items: center;
 }

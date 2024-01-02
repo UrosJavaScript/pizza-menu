@@ -4,6 +4,8 @@
   "workOpen": "--OPEN--",
   "workClose": "--CLOSED--",
   "menuTitle": "Our menu",
+  "noPizza": "no pizza, coming soon ",
+  "soldOut": "sold out",
   "footerTitle": "FAST PIZZA GO",
   "footerCopy": "Copyright 2024"
 }

@@ -1,11 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-export const WorkingTime = () => {
+export const WorkingTime = ({ hour, openHour, closeHour }) => {
   const { t } = useTranslation();
-  const hour = new Date().getHours();
-  const openHour = 10;
-  const closeHour = 22;
+
   const isOpen = hour >= openHour && hour <= closeHour;
 
   return (

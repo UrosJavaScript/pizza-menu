@@ -13,7 +13,7 @@ export const PIZZA_DATA = [
     ingredients: "bread with italian olive and mozzarella",
     price: "10€",
     photoName: Pizza1,
-    soldOut: false,
+    soldOut: true,
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ export const PIZZA_DATA = [
       "Milano salami on crispy and puffy dough with tomato sauce, mozzarella and oregano",
     price: "14€",
     photoName: Pizza5,
-    soldOut: false,
+    soldOut: true,
   },
   {
     id: 6,

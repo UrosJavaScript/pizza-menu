@@ -32,6 +32,15 @@
   top: 20%;
   font-size: 22px;
 }
+.pizza-soldout {
+  color: #b6bbc4;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sold-out {
+  text-decoration: line-through;
+}
 .pizza-description {
   display: flex;
   flex-direction: column;

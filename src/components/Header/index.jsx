@@ -10,6 +10,9 @@ import QR from "../../assets/bg-header/qr-code.png";
 
 export const Header = () => {
   const { t } = useTranslation();
+  const hour = new Date().getHours();
+  const openHour = 10;
+  const closeHour = 22;
   return (
     <header>
       <div className="container">
@@ -22,9 +25,17 @@ export const Header = () => {
         <div className="header-banner">
           <div className="wrapperFlex">
             <span className="text">
-              <WorkingTime />
+              <WorkingTime
+                hour={hour}
+                openHour={openHour}
+                closeHour={closeHour}
+              />
             </span>
             <img src={Banner} alt="banner-header" className="banner-img" />
+
+            <span className="work-times-number">
+              {openHour}:00 - {closeHour}:00
+            </span>
           </div>
         </div>
 
