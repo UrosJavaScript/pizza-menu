@@ -1,4 +1,4 @@
-// interpolation
+// i18n
 import "./i18n";
 // components
 import Layouts from "./layouts";

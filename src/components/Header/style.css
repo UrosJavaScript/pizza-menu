@@ -1,12 +1,10 @@
 /* HEADER CSS */
 header {
-  /* position: relative; */
   background-image: url("../../assets/bg-header/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
 }
-
 .header-banner {
   padding: 50px;
   width: 20vw;
@@ -15,7 +13,6 @@ header {
     width: 100%;
   }
 }
-
 .wrapperFlex {
   width: 100%;
   display: flex;
@@ -24,7 +21,6 @@ header {
   flex-direction: column;
   position: relative;
 }
-
 .text {
   color: #f0ece5;
   font-weight: 400;
@@ -33,7 +29,6 @@ header {
   font-size: 18px;
   width: 180px;
   font-family: "Overlock SC", sans-serif;
-
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -50,7 +45,6 @@ header {
     border-radius: 2px;
   }
 }
-
 .banner-img {
   height: 290px;
   border-radius: 2px;

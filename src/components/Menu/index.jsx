@@ -11,7 +11,6 @@ import "./style.css";
 export const Menu = () => {
   const { t } = useTranslation();
   const pizzas = PIZZA_DATA;
-  // const pizzas = [];
   const numPizzas = pizzas.length;
   return (
     <>
