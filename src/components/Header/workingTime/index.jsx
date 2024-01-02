@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const WorkingTime = () => {
+  const { t } = useTranslation();
   const hour = new Date().getHours();
   const openHour = 10;
   const closeHour = 22;
@@ -8,7 +10,7 @@ export const WorkingTime = () => {
 
   return (
     <>
-      <span>Working Time:</span>
+      <span>{t("workTimeTitle")}</span>
 
       {isOpen ? (
         <span
@@ -16,7 +18,7 @@ export const WorkingTime = () => {
             fontWeight: "bold",
           }}
         >
-          --OPEN--
+          {t("workOpen")}
         </span>
       ) : (
         <span
@@ -24,7 +26,7 @@ export const WorkingTime = () => {
             fontWeight: "bold",
           }}
         >
-          --CLOSED--
+          {t("workClose")}
         </span>
       )}
     </>

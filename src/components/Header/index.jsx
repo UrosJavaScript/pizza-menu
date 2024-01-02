@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // components
 import { WorkingTime } from "./workingTime";
 // styles
@@ -8,12 +9,13 @@ import Banner from "../../assets/bannerPizza/bannerPizza.jpg";
 import QR from "../../assets/bg-header/qr-code.png";
 
 export const Header = () => {
+  const { t } = useTranslation();
   return (
     <header>
       <div className="container">
         {/* title */}
         <span className="title">
-          <h1 style={{ color: "#f0ece5" }}>fast pizza go</h1>
+          <h1 style={{ color: "#f0ece5" }}>{t("headerTitle")}</h1>
         </span>
 
         {/* banner */}
